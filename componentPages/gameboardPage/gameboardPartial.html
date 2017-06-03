@@ -1,0 +1,68 @@
+
+    <div class="row" uploader="uploader" >
+        <div class="col-md-6"><button ng-hide="gridLock" class="btn btn-lg btn-warning btn-block" type="submit" ng-click="buildBoard()">REROLL MAI BOARD</button></div>
+        <div class="col-md-6"><button ng-hide="gridLock" class="btn btn-lg btn-success btn-block" type="submit" ng-click="lockBoard()">i like dis one.</button></div>
+    </div>
+
+
+    <center><div ng-hide="gridLock" >Boards are random! You can reroll if you don't like it up to {{gridRefreshes}} times. Or be happy with what you were given.</div></center>
+
+    <hr>
+    <h1><center>{{user}}</center></h1>
+    <hr>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th><center>C</center></th>
+            <th><center>O</center></th>
+            <th><center>N</center></th>
+            <th><center>G</center></th>
+            <th><center>O</center></th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><center>{{grid[0]['key']}}</center><button ng-file-select="console.log('yay')" ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[1]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[2]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[3]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[4]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+            </tr>
+
+            <tr>
+                <td><center>{{grid[5]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[6]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[7]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[8]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[9]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+            </tr>
+
+            <tr>
+                <td><center>{{grid[10]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[11]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[12]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[13]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[14]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+            </tr>
+
+            <tr>
+                <td><center>{{grid[15]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[16]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[17]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[18]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[19]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+            </tr>
+
+            <tr>
+                <td><center>{{grid[20]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[21]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[22]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[23]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+                <td><center>{{grid[24]['key']}}</center><button ng-file-select ng-model="files" class="btn btn-xs btn-info btn-block" type="submit"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <hr>
+    <button class="btn btn-sm btn-warning btn-block" type="submit" ng-click="logout()">leef!</button>

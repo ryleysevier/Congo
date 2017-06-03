@@ -1,0 +1,19 @@
+    <h2 class="form-signin-heading">COSPLAY-BINGO</h2>
+    <h4 class="form-signin-heading">It's called Con-go.</h4>
+    <h4 class="form-signin-heading">Just get signed in.</h4>
+    <br>
+    <pre ng-hide="newAccount">Make an account for your team. Give them the same creds you used. Don't lose your password. I really don't care enough to make a password reset.</pre>
+    <label ng-hide="newAccount">Super team name goes here:</label>
+    <input ng-model="username" id="inputEmail" class="form-control" placeholder="Team Name" autofocus="" autocomplete="on">
+    <br>
+    <label ng-hide="newAccount">I made this in about 4 hours. If you think I made it secure you should use your bank password.</label>
+    <input ng-model="password" type="password" id="inputPassword" class="form-control" placeholder="Super Secret Access Code" autocomplete="on">
+    <br>
+    <h3 ng-hide="!itBroke" class="alert-danger">You broke something- good job</h3>
+    <h3 ng-hide="!loginBroke" class="alert-danger">You messed that up. I don't know what though.</h3>
+    <h3 ng-hide="!loginUBroke" class="alert-danger">You messed that up. Bad Username. You're welcome.</h3>
+    <h3 ng-hide="!loginPBroke" class="alert-danger">You messed that up. Bad Password. You're welcome.</h3>
+    <button ng-hide="!newAccount" class="btn btn-lg btn-primary btn-block" type="submit" ng-click="login(username, password)">hold my beer</button>
+    <button ng-hide="newAccount" class="btn btn-lg btn-info btn-block" type="submit" ng-click="makeAccount(username, password)">Become a responsible account maker with this button.</button>
+    <hr>
+    <button  ng-hide="!newAccount" class="btn btn-lg btn-info btn-block" type="submit" ng-click="needAccount()">I NEED AN ACCOUNT</button>
